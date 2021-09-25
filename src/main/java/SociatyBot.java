@@ -84,7 +84,7 @@ public class SociatyBot extends TelegramLongPollingBot {
         Long chatId = update.getMessage().getChatId();
         String inputText = update.getMessage().getText();
         Message message = update.getMessage();
-        SendMessage sendMessage = new SendMessage();
+        SendMessage sendMessage = new SendMessage(); //
 
         if (update.hasMessage()) {
             sendMessage.setChatId(chatId);
